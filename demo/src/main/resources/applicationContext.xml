@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sparkPlug" class="com.example.XML.SparkPlug">
+        <property name="type" value="Iridium"/>
+    </bean>
+
+    <bean id="starter" class="com.example.XML.Starter">
+        <property name="model" value="Bosch X12"/>
+    </bean>
+
+    <bean id="engine" class="com.example.XML.Engine">
+        <property name="starter" ref="starter"/>
+        <property name="sparkPlug" ref="sparkPlug"/>
+        <property name="power" value="150"/>
+    </bean>
+
+    <bean id="wheel" class="com.example.XML.Wheel">
+        <property name="brand" value="Michelin"/>
+        <property name="size" value="17"/>
+    </bean>
+
+    <bean id="accumulator" class="com.example.XML.Accumulator">
+        <property name="capacity" value="60"/>
+        <property name="technology" value="Li-Ion"/>
+    </bean>
+
+    <bean id="hinge" class="com.example.XML.Hinge">
+        <property name="material" value="Steel"/>
+        <property name="count" value="4"/>
+    </bean>
+
+    <bean id="differential" class="com.example.XML.Differential">
+        <property name="type" value="Limited Slip"/>
+    </bean>
+
+    <bean id="suspension" class="com.example.XML.Suspension">
+        <property name="hinge" ref="hinge"/>
+        <property name="differential" ref="differential"/>
+        <property name="suspensionType" value="Multi-link"/>
+    </bean>
+
+    <bean id="car" class="com.example.XML.Car">
+        <property name="model" value="Toyota Camry"/>
+        <property name="wheel" ref="wheel"/>
+        <property name="engine" ref="engine"/>
+        <property name="accumulator" ref="accumulator"/>
+        <property name="suspension" ref="suspension"/>
+    </bean>
+</beans>
