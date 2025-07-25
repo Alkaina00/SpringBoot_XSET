@@ -1,8 +1,6 @@
 package com.example.JavaCode;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Hinge {
     private String material;
     private int count;

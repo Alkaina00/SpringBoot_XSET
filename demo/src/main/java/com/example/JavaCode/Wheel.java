@@ -1,8 +1,5 @@
 package com.example.JavaCode;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Wheel {
     private String brand;
     private int size;

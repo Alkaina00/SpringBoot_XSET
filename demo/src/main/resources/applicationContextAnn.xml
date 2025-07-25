@@ -9,43 +9,4 @@
 
     <context:component-scan base-package="com.example.Annotation"/>
     <context:annotation-config/>
-
-    <bean id="car" class="com.example.Annotation.Car">
-        <property name="model" value="Toyota Camry"/>
-    </bean>
-
-    <bean id="wheel" class="com.example.Annotation.Wheel">
-        <property name="brand" value="Michelin"/>
-        <property name="size" value="18"/>
-    </bean>
-
-    <bean id="engine" class="com.example.Annotation.Engine">
-        <property name="power" value="200"/>
-    </bean>
-
-    <bean id="accumulator" class="com.example.Annotation.Accumulator">
-        <property name="capacity" value="70"/>
-        <property name="technology" value="Li-Ion"/>
-    </bean>
-
-    <bean id="suspension" class="com.example.Annotation.Suspension">
-        <property name="suspensionType" value="Multi-Link"/>
-    </bean>
-
-    <bean id="hinge" class="com.example.Annotation.Hinge">
-        <property name="material" value="Steel"/>
-        <property name="count" value="4"/>
-    </bean>
-
-    <bean id="differential" class="com.example.Annotation.Differential">
-        <property name="type" value="Limited-Slip"/>
-    </bean>
-
-    <bean id="starter" class="com.example.Annotation.Starter">
-        <property name="model" value="PremiumStart-X200"/>
-    </bean>
-
-    <bean id="sparkPlug" class="com.example.Annotation.SparkPlug">
-        <property name="type" value="Iridium"/>
-    </bean>
 </beans>
